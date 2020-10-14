@@ -244,7 +244,7 @@ class LeadFieldRepository extends CommonRepository
                 );
 
                 $expr->add(
-                    'l.'.$field." $operator '\\\\|?$value\\\\|?'"
+                    $property." $operator '\\\\|?$value\\\\|?'"
                 );
 
                 $q->where($expr)
